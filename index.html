@@ -4,25 +4,180 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>お題くじ</title>
+  <title>ソラウミプロジェクト | 無料Webアプリ</title>
+  <meta name="description" content="ソラウミプロジェクトは、創作や日常生活に役立つ無料Webアプリを制作・公開しているサイトです。">
 
+  <!-- Google AdSense -->
   <meta name="google-adsense-account" content="ca-pub-1020374554771533">
-
   <script async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1020374554771533"
     crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: #f7f9fc;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    header {
+      background: #dcecf8;
+      text-align: center;
+      padding: 55px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+      color: #305d80;
+    }
+
+    header p {
+      margin-top: 12px;
+      color: #526b7c;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 35px 20px;
+    }
+
+    h2 {
+      color: #305d80;
+      border-bottom: 2px solid #dcecf8;
+      padding-bottom: 8px;
+    }
+
+    .apps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin: 25px 0;
+    }
+
+    .app-card {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+    }
+
+    .app-card h3 {
+      margin-top: 0;
+      color: #305d80;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 20px;
+      background: #467fa6;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    .button:hover {
+      background: #305d80;
+    }
+
+    footer {
+      text-align: center;
+      background: #eaf0f5;
+      padding: 25px 15px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #305d80;
+      margin: 0 8px;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>お題くじ</h1>
 
-  <p>
-    キャラクターデザインやイラストのお題をランダムに生成できる
-    「お題くじ」を公開しています。
-  </p>
+  <header>
+    <h1>ソラウミプロジェクト</h1>
+    <p>創作と日常を、もっと楽しく。</p>
+  </header>
 
-  <p>
-    <a href="/theme-lottery-app/">お題くじを開く</a>
-  </p>
+  <main>
+    <section>
+      <h2>ソラウミプロジェクトについて</h2>
+      <p>
+        ソラウミプロジェクトでは、創作活動や日常生活を
+        少し便利にするWebアプリを制作・公開しています。
+      </p>
+      <p>
+        イラスト制作のアイデア探しや、毎日のレシピ管理など、
+        気軽に使えるツールを目指しています。
+      </p>
+    </section>
+
+    <section>
+      <h2>公開中のアプリ</h2>
+
+      <div class="apps">
+
+        <article class="app-card">
+          <h3>🎲 お題くじ</h3>
+          <p>
+            キャラクターデザインやイラスト制作の
+            アイデアをランダムに抽選できるアプリです。
+          </p>
+          <p>
+            お題のジャンルを選んだり、自分でお題を
+            追加したりして楽しめます。
+          </p>
+          <a class="button" href="/theme-lottery-app/">
+            お題くじを使う
+          </a>
+        </article>
+
+        <article class="app-card">
+          <h3>📖 レシピ管理アプリ</h3>
+          <p>
+            自分のお気に入りのレシピを登録して、
+            整理・管理できるアプリです。
+          </p>
+          <p>
+            材料や作り方を記録し、毎日の献立を
+            考えるときにも活用できます。
+          </p>
+          <a class="button" href="/recipe-app/">
+            レシピ管理を使う
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>今後について</h2>
+      <p>
+        ソラウミプロジェクトでは、今後も創作支援や
+        生活に役立つアプリを制作していく予定です。
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <a href="/about.html">サイトについて</a>
+      <a href="/privacy.html">プライバシーポリシー</a>
+      <a href="/contact.html">お問い合わせ</a>
+    </p>
+    <p>&copy; 2026 ソラウミプロジェクト</p>
+  </footer>
+
 </body>
 </html>
